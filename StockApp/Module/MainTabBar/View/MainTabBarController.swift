@@ -28,9 +28,9 @@ class MainTabBarController: UITabBarController {
     func initialSetUp() {
         
         /// SetUp Icon
-        let icon1 = UITabBarItem(title: "Title", image: UIImage(systemName: "circle"), selectedImage:  UIImage(systemName: "circle"))
-        let icon2 = UITabBarItem(title: "Title2", image: UIImage(systemName: "circle"), selectedImage:  UIImage(systemName: "circle"))
-        let icon3 = UITabBarItem(title: "Title3", image: UIImage(systemName: "circle"), selectedImage:  UIImage(systemName: "circle"))
+        let icon1 = UITabBarItem(title: "Home", image: UIImage(systemName: "dollarsign.square"), selectedImage:  UIImage(systemName: "dollarsign.square.fill"))
+        let icon2 = UITabBarItem(title: "Wishlist", image: UIImage(systemName: "star.square"), selectedImage:  UIImage(systemName: "star.square.fill"))
+        let icon3 = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.square"), selectedImage:  UIImage(systemName: "person.crop.rectangle.fill"))
         
         /// Setup ViewContoller
         let homeNavigation = UINavigationController(rootViewController: HomeViewController(wishlistManager: wishListManager))
@@ -51,6 +51,7 @@ class MainTabBarController: UITabBarController {
             }
             addChild(child.0)
         }
+        tabBar.barTintColor = UIColor.clear
     }
 }
 
