@@ -20,7 +20,6 @@ class WishListViewController: UIViewController {
     var dataSource: DataSource?
     var snapShot: Snapshot?
     
-    
     init() {
         super.init(nibName: "WishListViewController", bundle: nil)
     }
@@ -42,8 +41,12 @@ class WishListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if let wishlistManager = wishlistManager {
-            wishViewModel.wishlistStock = wishlistManager.getWishListStock()
-
+            let stocklist = wishlistManager.getWishListStock()
+            wishViewModel.wishlistStock = stocklist
+            if stocklist.isEmpty {
+                self.snapShot?.deleteSections([1])
+                self.dataSource?.apply(self.snapShot ?? Snapshot(), animatingDifferences: false, completion: nil)
+            }
         }
     }
     

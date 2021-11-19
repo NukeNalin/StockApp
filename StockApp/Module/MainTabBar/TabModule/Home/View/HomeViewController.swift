@@ -107,5 +107,4 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: UICollectionViewDelegate {
-}
+extension HomeViewController: UICollectionViewDelegate {}

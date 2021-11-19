@@ -51,7 +51,8 @@ class MainTabBarController: UITabBarController {
             }
             addChild(child.0)
         }
-        tabBar.barTintColor = UIColor.clear
+        tabBar.barTintColor = UIColor.background
+        tabBar.tintColor = UIColor.highLightColor
     }
 }
 

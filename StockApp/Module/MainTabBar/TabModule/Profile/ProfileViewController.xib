@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="StockApp" customModuleProvider="target">
             <connections>
+                <outlet property="labelName" destination="5ND-iU-MNu" id="eLI-c7-2cB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +23,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ezp-eL-uy7">
-                            <rect key="frame" x="32" y="30.5" width="30" height="39"/>
+                            <rect key="frame" x="12" y="30.5" width="30" height="39"/>
                             <color key="tintColor" red="0.96470588239999999" green="0.84313725490000002" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="Yer-BT-Y3g"/>
@@ -30,22 +31,33 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nalin Porwal " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ND-iU-MNu">
-                            <rect key="frame" x="70" y="35" width="312" height="30"/>
+                            <rect key="frame" x="50" y="35" width="352" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="rCJ-94-C95"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            <color key="textColor" red="0.96470588239999999" green="0.84313725490000002" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <color key="textColor" red="0.4941176471" green="0.57254901960000004" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNP-GI-9PY">
+                            <rect key="frame" x="46" y="39.5" width="45" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="f1b-t8-91e"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.4941176471" green="0.57254901960000004" blue="0.66274509800000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="5ND-iU-MNu" secondAttribute="trailing" constant="32" id="EOa-KL-Vc0"/>
-                        <constraint firstItem="ezp-eL-uy7" firstAttribute="leading" secondItem="h7C-0G-Pcz" secondAttribute="leading" constant="32" id="LDy-YS-Ay1"/>
+                        <constraint firstAttribute="trailing" secondItem="5ND-iU-MNu" secondAttribute="trailing" constant="12" id="EOa-KL-Vc0"/>
+                        <constraint firstItem="ezp-eL-uy7" firstAttribute="leading" secondItem="h7C-0G-Pcz" secondAttribute="leading" constant="12" id="LDy-YS-Ay1"/>
                         <constraint firstAttribute="height" constant="100" id="Sry-ND-Uiu"/>
+                        <constraint firstItem="pNP-GI-9PY" firstAttribute="leading" secondItem="ezp-eL-uy7" secondAttribute="trailing" constant="4" id="ajp-aC-81y"/>
                         <constraint firstItem="5ND-iU-MNu" firstAttribute="centerY" secondItem="h7C-0G-Pcz" secondAttribute="centerY" id="grt-qP-vtb"/>
                         <constraint firstItem="ezp-eL-uy7" firstAttribute="centerY" secondItem="h7C-0G-Pcz" secondAttribute="centerY" id="k4S-Kg-l5M"/>
+                        <constraint firstItem="pNP-GI-9PY" firstAttribute="centerY" secondItem="5ND-iU-MNu" secondAttribute="centerY" id="k8S-0a-DSq"/>
                         <constraint firstItem="5ND-iU-MNu" firstAttribute="leading" secondItem="ezp-eL-uy7" secondAttribute="trailing" constant="8" id="kaE-ci-pUB"/>
                     </constraints>
                 </view>
@@ -58,6 +70,9 @@
                     <color key="tintColor" systemColor="systemPinkColor"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="LOGOUT"/>
+                    <connections>
+                        <action selector="actionLogout:" destination="-1" eventType="touchUpInside" id="dMP-2v-m6S"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
