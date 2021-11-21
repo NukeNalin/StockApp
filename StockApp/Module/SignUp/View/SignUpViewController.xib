@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="StockApp" customModuleProvider="target">
             <connections>
+                <outlet property="btnSignUp" destination="V93-2y-UWw" id="1if-oz-rid"/>
                 <outlet property="textFiledEmail" destination="d4R-bW-cLN" id="hJ2-nv-q1Y"/>
                 <outlet property="textFiledPassowrd" destination="VJy-cq-tZk" id="atg-aB-Y1D"/>
                 <outlet property="textfieldName" destination="fIL-x7-39A" id="RKx-D9-afj"/>
@@ -34,7 +35,7 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Se-3J-y3E">
-                    <rect key="frame" x="32" y="264" width="350" height="230"/>
+                    <rect key="frame" x="32" y="194" width="350" height="230"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIL-x7-39A">
                             <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
@@ -56,7 +57,7 @@
                             </constraints>
                             <color key="textColor" red="0.039215686270000001" green="0.094117647060000004" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJy-cq-tZk">
                             <rect key="frame" x="0.0" y="120" width="350" height="50"/>
@@ -67,7 +68,7 @@
                             </constraints>
                             <color key="textColor" red="0.039215686270000001" green="0.094117647060000004" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="V93-2y-UWw">
                             <rect key="frame" x="0.0" y="180" width="350" height="50"/>
@@ -82,13 +83,22 @@
                         </button>
                     </subviews>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKh-9X-cvl">
+                    <rect key="frame" x="32" y="131" width="350" height="53"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="44"/>
+                    <color key="textColor" red="0.96470588239999999" green="0.84313725490000002" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.039215686270000001" green="0.094117647060000004" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="4Se-3J-y3E" firstAttribute="top" secondItem="FKh-9X-cvl" secondAttribute="bottom" constant="10" id="0j2-XR-sOp"/>
                 <constraint firstItem="4Se-3J-y3E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="6Wm-wY-2Mq"/>
                 <constraint firstItem="d5n-4f-ZGV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="6t7-Ua-oeS"/>
-                <constraint firstItem="4Se-3J-y3E" firstAttribute="top" secondItem="d5n-4f-ZGV" secondAttribute="bottom" constant="150" id="9fB-6n-4eq"/>
+                <constraint firstItem="4Se-3J-y3E" firstAttribute="top" secondItem="d5n-4f-ZGV" secondAttribute="bottom" constant="80" id="9fB-6n-4eq"/>
+                <constraint firstItem="FKh-9X-cvl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Feg-HY-Gs1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FKh-9X-cvl" secondAttribute="trailing" constant="32" id="LIx-Zi-bLG"/>
                 <constraint firstItem="d5n-4f-ZGV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Vte-KN-D40"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Se-3J-y3E" secondAttribute="trailing" constant="32" id="q9C-tQ-RkH"/>
             </constraints>
