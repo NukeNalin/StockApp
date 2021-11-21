@@ -13,6 +13,7 @@ class StockViewModel {
    @Published var stockList: [Stock] = []
    private var networkSubscriber: AnyCancellable?
    private var timer: Timer?
+    
     init() {
       timer = getStockInLoop()
     }
@@ -32,7 +33,6 @@ class StockViewModel {
                 })
         }
     }
-    
     
     func cancelTimer() {
         timer?.invalidate()

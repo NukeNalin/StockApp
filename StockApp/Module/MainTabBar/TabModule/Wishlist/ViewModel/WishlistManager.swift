@@ -9,9 +9,10 @@ import Foundation
 import Firebase
 import FirebaseFirestore
 class WishlistManager {
-    
+
     private var wishListStock = [String]()
-    let db = Firestore.firestore()
+    private let db = Firestore.firestore()
+    
     init() {
         GetWishListFromCloud()
     }
@@ -23,7 +24,8 @@ class WishlistManager {
     func isStockInWisthList(with id: String) -> Bool {
         wishListStock.contains(id)
     }
-     func updateWishList(_ stockID: String) {
+    
+    func updateWishList(_ stockID: String) {
         if wishListStock.contains(stockID) {
             wishListStock.removeAll { $0 == stockID }
         } else {
@@ -36,27 +38,19 @@ class WishlistManager {
         guard let  userId = Auth.auth().currentUser?.uid  else {return}
         db.collection(userId).document("wishlist").setData([
             "value" : wishListStock
-        ]) { err in
-            if let err = err {
-                print("Error writing document: \(err)")
-            } else {
-                print("Document successfully written!")
-            }
+        ]) { _ in
         }
     }
     
-    func GetWishListFromCloud() {
+   private func GetWishListFromCloud() {
         guard let  userId = Auth.auth().currentUser?.uid  else {return}
         db.collection(userId).getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
+            if err != nil {
                 self.updateWishlistToCloud()
             } else {
                 for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
                     if let anyArray = document.data()["value"] as? [String] {
                         self.wishListStock = anyArray
-                        print("======",self.wishListStock)
                     }
                 }
             }

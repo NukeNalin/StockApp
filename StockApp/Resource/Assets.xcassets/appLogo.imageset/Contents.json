@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "appLogo.png",
       "idiom" : "universal"
     }
   ],

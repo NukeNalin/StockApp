@@ -16,7 +16,7 @@ class StockCell: UICollectionViewCell {
     @IBOutlet weak var labelHigh: UILabel!
     @IBOutlet weak var labelPriceChanges: UILabel!
     var tapGesture = UITapGestureRecognizer()
-    var favCallBack: ()->Void = {}
+    var wishlistCallBack: ()->Void = {}
     
     var isInWishList: Bool? = nil {
         didSet {
@@ -33,7 +33,7 @@ class StockCell: UICollectionViewCell {
     }
     
     @objc func didTapOnCell(_ sender: UITapGestureRecognizer) {
-        favCallBack()
+        wishlistCallBack()
     }
     
     func setUpData(_ stock: Stock) {

@@ -9,9 +9,10 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
     
+    @IBOutlet weak var btnlogin: UIButton!
     @IBOutlet weak var textFieldPassword: UITextField!
     @IBOutlet weak var textFieldEmail: UITextField!
     init() {
@@ -23,7 +24,13 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initailSetUp()
+    }
+    
+    fileprivate func initailSetUp() {
+        btnlogin.setCornerRadius()
+        textFieldPassword.setCornerRadius()
+        textFieldEmail.setCornerRadius()
     }
     
     @IBAction func actionLogin(_ sender: Any) {
@@ -47,6 +54,8 @@ class LoginViewController: UIViewController {
                 let viewcontroller = MainTabBarController()
                 viewcontroller.view.backgroundColor = .blue
                 sceneDelegate.window?.rootViewController = viewcontroller
+            } else {
+                self.showAlert(error!.localizedDescription , title: "Error")
             }
         }
     }

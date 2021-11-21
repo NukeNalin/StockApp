@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="StockApp" customModuleProvider="target">
             <connections>
+                <outlet property="btnlogin" destination="CMI-g5-JZb" id="2UY-Yj-c7S"/>
                 <outlet property="textFieldEmail" destination="m1s-Qb-4UE" id="XWF-Oa-ikG"/>
                 <outlet property="textFieldPassword" destination="xDd-rW-9Zs" id="iQn-Xq-hhP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -23,27 +24,33 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <color key="backgroundColor" red="0.039215686270000001" green="0.094117647060000004" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGh-Jx-9v5">
+                    <rect key="frame" x="32" y="94" width="265" height="53"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="44"/>
+                    <color key="textColor" red="0.96470588239999999" green="0.84313725490000002" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bNS-7h-tpH">
-                    <rect key="frame" x="32" y="144" width="350" height="170"/>
+                    <rect key="frame" x="32" y="164" width="350" height="170"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m1s-Qb-4UE">
                             <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
-                            <color key="backgroundColor" white="1" alpha="0.12091266556291391" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="tintColor" red="0.96470588239999999" green="0.84313725490000002" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="G9u-i2-5Pv"/>
                             </constraints>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDd-rW-9Zs">
                             <rect key="frame" x="0.0" y="60" width="350" height="50"/>
-                            <color key="backgroundColor" white="1" alpha="0.12091266556291391" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="tintColor" red="0.96470588239999999" green="0.84313725490000002" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMI-g5-JZb">
                             <rect key="frame" x="0.0" y="120" width="350" height="50"/>
@@ -58,7 +65,7 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WU-t4-Rvs">
-                    <rect key="frame" x="32" y="314" width="350" height="50"/>
+                    <rect key="frame" x="32" y="334" width="350" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="cB9-QT-BzB"/>
                     </constraints>
@@ -77,13 +84,16 @@
             <color key="tintColor" red="0.039215686270000001" green="0.094117647060000004" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="7WU-t4-Rvs" firstAttribute="top" secondItem="bNS-7h-tpH" secondAttribute="bottom" id="HB6-he-fVd"/>
-                <constraint firstItem="bNS-7h-tpH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="LVZ-FE-ocY"/>
+                <constraint firstItem="bNS-7h-tpH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="LVZ-FE-ocY"/>
+                <constraint firstItem="dGh-Jx-9v5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="Qt6-yT-LCH"/>
                 <constraint firstItem="bNS-7h-tpH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Rr2-Mx-nXn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bNS-7h-tpH" secondAttribute="trailing" constant="32" id="SJH-kk-8lP"/>
                 <constraint firstItem="vaz-SB-x09" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cua-JA-kqX"/>
                 <constraint firstItem="7WU-t4-Rvs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="din-00-R1o"/>
                 <constraint firstItem="vaz-SB-x09" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gYs-jG-KB1"/>
+                <constraint firstItem="dGh-Jx-9v5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="kjD-jS-bYG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7WU-t4-Rvs" secondAttribute="trailing" constant="32" id="lDf-vP-K5V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dGh-Jx-9v5" secondAttribute="trailing" constant="117" id="plA-qi-UJJ"/>
                 <constraint firstItem="vaz-SB-x09" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="roQ-gT-gc0"/>
                 <constraint firstAttribute="bottom" secondItem="vaz-SB-x09" secondAttribute="bottom" id="uoK-i7-v9I"/>
             </constraints>

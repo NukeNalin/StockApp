@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class WishListViewController: UIViewController {
+class WishListViewController: BaseViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     var wishViewModel: WishlistViewModel = .init()
@@ -61,8 +61,12 @@ class WishListViewController: UIViewController {
     }
     
     fileprivate func setUpSubscriber() {
+        self.showActivityIndicator()
         stockListSubscriber = wishViewModel.$stockList.sink(receiveValue: { [weak self] stock in
             guard let self = self else {return}
+            if !stock.isEmpty {
+                self.hideActivityIndicator()
+            }
             if self.snapShot == nil {return}
             self.snapShot?.deleteSections([1])
             self.snapShot?.appendSections([1])

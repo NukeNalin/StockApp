@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,7 +26,7 @@
 		DA3B5F982742943900901063 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA3B5F962742943900901063 /* ProfileViewController.xib */; };
 		DA3B5FA027438A4500901063 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B5F9F27438A4500901063 /* StockViewModel.swift */; };
 		DA3B5FA22743922D00901063 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B5FA12743922D00901063 /* Stock.swift */; };
-		DA3B5FA52743A12200901063 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B5FA42743A12200901063 /* NetworkLayer.swift */; };
+		DA3B5FA52743A12200901063 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B5FA42743A12200901063 /* Network.swift */; };
 		DA3B5FA92743C58500901063 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B5FA72743C58500901063 /* StockCell.swift */; };
 		DA3B5FAA2743C58500901063 /* StockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA3B5FA82743C58500901063 /* StockCell.xib */; };
 		DA3B5FAC2744293200901063 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B5FAB2744293200901063 /* UIColor+Extension.swift */; };
@@ -34,6 +34,9 @@
 		DA3B5FB32744E9D400901063 /* WishlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B5FB22744E9D400901063 /* WishlistViewModel.swift */; };
 		DA5860E4274521C500060AC7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DA5860E3274521C500060AC7 /* FirebaseAuth */; };
 		DA5860E6274529E000060AC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA5860E5274529E000060AC7 /* GoogleService-Info.plist */; };
+		DA8A9B1F274A15FB000BA144 /* HomeVc+Extension+CollectionDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A9B1E274A15FB000BA144 /* HomeVc+Extension+CollectionDS.swift */; };
+		DA8A9B21274A1777000BA144 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A9B20274A1777000BA144 /* BaseViewController.swift */; };
+		DA8A9B23274A18DA000BA144 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8A9B22274A18DA000BA144 /* UIView+Extension.swift */; };
 		DADFE54427464C950071FB51 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DADFE54327464C950071FB51 /* FirebaseDatabase */; };
 		DADFE568274665B70071FB51 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DADFE567274665B70071FB51 /* FirebaseFirestore */; };
 		DADFE56C27468C9B0071FB51 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADFE56A27468C9B0071FB51 /* SignUpViewController.swift */; };
@@ -82,13 +85,16 @@
 		DA3B5F962742943900901063 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		DA3B5F9F27438A4500901063 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 		DA3B5FA12743922D00901063 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
-		DA3B5FA42743A12200901063 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		DA3B5FA42743A12200901063 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DA3B5FA72743C58500901063 /* StockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
 		DA3B5FA82743C58500901063 /* StockCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StockCell.xib; sourceTree = "<group>"; };
 		DA3B5FAB2744293200901063 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DA3B5FAD2744CF4300901063 /* WishlistManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistManager.swift; sourceTree = "<group>"; };
 		DA3B5FB22744E9D400901063 /* WishlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewModel.swift; sourceTree = "<group>"; };
 		DA5860E5274529E000060AC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA8A9B1E274A15FB000BA144 /* HomeVc+Extension+CollectionDS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVc+Extension+CollectionDS.swift"; sourceTree = "<group>"; };
+		DA8A9B20274A1777000BA144 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DA8A9B22274A18DA000BA144 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		DADFE56A27468C9B0071FB51 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DADFE56B27468C9B0071FB51 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		DADFE56E274699E70071FB51 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -194,9 +200,9 @@
 		DA3B5F7A274275E500901063 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				DA3B5F7F2742780500901063 /* Login */,
 				DADFE56927468C830071FB51 /* SignUp */,
 				DA3B5F802742783900901063 /* MainTabBar */,
-				DA3B5F7F2742780500901063 /* Login */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 		DA3B5F7C2742760800901063 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DA3B5F9A2743896200901063 /* ViewModel */,
 				DA3B5FA327439BA800901063 /* View */,
 			);
 			path = Home;
@@ -212,8 +219,7 @@
 		DA3B5F7F2742780500901063 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				DA3B5F84274278B400901063 /* LoginViewController.swift */,
-				DA3B5F85274278B400901063 /* LoginViewController.xib */,
+				DA8A9B1C274A14F7000BA144 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -248,9 +254,9 @@
 		DA3B5F832742787C00901063 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				DA3B5FA42743A12200901063 /* NetworkLayer.swift */,
-				DA3B5FAB2744293200901063 /* UIColor+Extension.swift */,
-				DADFE56E274699E70071FB51 /* UIViewController+Extension.swift */,
+				DA8A9B26274A6BD9000BA144 /* Extension */,
+				DA8A9B25274A6BCC000BA144 /* BaseClasses */,
+				DA8A9B24274A6BBA000BA144 /* Network */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -294,9 +300,9 @@
 		DA3B5FA327439BA800901063 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA3B5F9A2743896200901063 /* ViewModel */,
 				DA3B5FA62743C4AA00901063 /* Cell */,
 				DA3B5F8D274293F500901063 /* HomeViewController.swift */,
+				DA8A9B1E274A15FB000BA144 /* HomeVc+Extension+CollectionDS.swift */,
 				DA3B5F8E274293F500901063 /* HomeViewController.xib */,
 			);
 			path = View;
@@ -336,11 +342,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DADFE56927468C830071FB51 /* SignUp */ = {
+		DA8A9B1C274A14F7000BA144 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B5F84274278B400901063 /* LoginViewController.swift */,
+				DA3B5F85274278B400901063 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8A9B1D274A150A000BA144 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				DADFE56A27468C9B0071FB51 /* SignUpViewController.swift */,
 				DADFE56B27468C9B0071FB51 /* SignUpViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA8A9B24274A6BBA000BA144 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B5FA42743A12200901063 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DA8A9B25274A6BCC000BA144 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DA8A9B20274A1777000BA144 /* BaseViewController.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		DA8A9B26274A6BD9000BA144 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B5FAB2744293200901063 /* UIColor+Extension.swift */,
+				DADFE56E274699E70071FB51 /* UIViewController+Extension.swift */,
+				DA8A9B22274A18DA000BA144 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DADFE56927468C830071FB51 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DA8A9B1D274A150A000BA144 /* View */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -430,7 +479,7 @@
 				};
 			};
 			buildConfigurationList = DA3B5F402742629E00901063 /* Build configuration list for PBXProject "StockApp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -493,18 +542,21 @@
 			files = (
 				DADFE56F274699E70071FB51 /* UIViewController+Extension.swift in Sources */,
 				DA3B5FAE2744CF4300901063 /* WishlistManager.swift in Sources */,
+				DA8A9B1F274A15FB000BA144 /* HomeVc+Extension+CollectionDS.swift in Sources */,
 				DA3B5F8F274293F500901063 /* HomeViewController.swift in Sources */,
 				DA3B5F932742942000901063 /* WishListViewController.swift in Sources */,
+				DA8A9B21274A1777000BA144 /* BaseViewController.swift in Sources */,
 				DA3B5F86274278B400901063 /* LoginViewController.swift in Sources */,
 				DA3B5FAC2744293200901063 /* UIColor+Extension.swift in Sources */,
 				DA3B5F492742629F00901063 /* AppDelegate.swift in Sources */,
 				DA3B5FA92743C58500901063 /* StockCell.swift in Sources */,
 				DA3B5F972742943900901063 /* ProfileViewController.swift in Sources */,
 				DA3B5F8B274280F800901063 /* MainTabBarController.swift in Sources */,
+				DA8A9B23274A18DA000BA144 /* UIView+Extension.swift in Sources */,
 				DADFE56C27468C9B0071FB51 /* SignUpViewController.swift in Sources */,
 				DA3B5F4B2742629F00901063 /* SceneDelegate.swift in Sources */,
 				DA3B5FA027438A4500901063 /* StockViewModel.swift in Sources */,
-				DA3B5FA52743A12200901063 /* NetworkLayer.swift in Sources */,
+				DA3B5FA52743A12200901063 /* Network.swift in Sources */,
 				DA3B5FA22743922D00901063 /* Stock.swift in Sources */,
 				DA3B5FB32744E9D400901063 /* WishlistViewModel.swift in Sources */,
 			);
@@ -680,10 +732,12 @@
 				DEVELOPMENT_TEAM = J74MMTX6NT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StockApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InstaStock;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -707,10 +761,12 @@
 				DEVELOPMENT_TEAM = J74MMTX6NT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StockApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = InstaStock;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

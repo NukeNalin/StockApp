@@ -22,7 +22,7 @@ extension UIViewController {
             let spinner = UIActivityIndicatorView(style: .large)
             spinner.frame = CGRect(x: 0.0, y: 0.0, width: 80.0, height: 80.0)
             spinner.center = CGPoint(x:loadingView.bounds.size.width / 2, y: loadingView.bounds.size.height / 2)
-
+            spinner.color = UIColor.highLightColor
             loadingView.addSubview(spinner)
             self.view.addSubview(loadingView)
             spinner.startAnimating()
@@ -36,6 +36,4 @@ extension UIViewController {
             }
         }
     }
-    
-    
 }

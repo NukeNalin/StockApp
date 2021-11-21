@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="StockApp" customModuleProvider="target">
             <connections>
+                <outlet property="btnlogout" destination="zSc-si-u55" id="IND-9e-RbF"/>
                 <outlet property="labelName" destination="5ND-iU-MNu" id="eLI-c7-2cB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -62,7 +63,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSc-si-u55">
-                    <rect key="frame" x="32" y="152" width="350" height="50"/>
+                    <rect key="frame" x="12" y="152" width="390" height="50"/>
                     <color key="backgroundColor" red="0.4941176471" green="0.57254901960000004" blue="0.66274509800000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Wub-j3-SJN"/>
@@ -78,11 +79,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.039215686270000001" green="0.094117647060000004" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zSc-si-u55" secondAttribute="trailing" constant="32" id="4ha-l2-ySA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zSc-si-u55" secondAttribute="trailing" constant="12" id="4ha-l2-ySA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h7C-0G-Pcz" secondAttribute="trailing" id="QUG-xl-1B3"/>
                 <constraint firstItem="zSc-si-u55" firstAttribute="top" secondItem="h7C-0G-Pcz" secondAttribute="bottom" constant="8" id="Riq-pp-fCL"/>
                 <constraint firstItem="h7C-0G-Pcz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Rqk-ZP-mTG"/>
-                <constraint firstItem="zSc-si-u55" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="WMX-6t-J8r"/>
+                <constraint firstItem="zSc-si-u55" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="WMX-6t-J8r"/>
                 <constraint firstItem="h7C-0G-Pcz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bvz-mU-NNx"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>

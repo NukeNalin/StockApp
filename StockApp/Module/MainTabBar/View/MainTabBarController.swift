@@ -9,7 +9,6 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
 
-    var stockViewModel = StockViewModel()
     lazy var wishListManager = WishlistManager()
     
     init() {
@@ -18,6 +17,10 @@ class MainTabBarController: UITabBarController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    deinit {
+        print("deinit -->",String(describing: self))
     }
     
     override func viewDidLoad() {
